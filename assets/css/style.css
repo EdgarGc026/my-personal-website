@@ -73,7 +73,6 @@ h1 {
 }
 
 /* Vamos con el Main */
-
 .services {
   /* height: 370px; */
   height: auto;
@@ -81,6 +80,7 @@ h1 {
 }
 
 .title-head {
+  margin-bottom: 20px;
   font-size: 2.5rem;
   text-align: center;
 }
@@ -104,6 +104,10 @@ h1 {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   text-align: center;
+}
+
+.item:nth-last-child(-n + 3) {
+  box-shadow: 0px 0px 6px rgba(150, 143, 143, 0.5);
 }
 
 [class^="fab fa"] {
@@ -180,6 +184,56 @@ h1 {
   grid-row: 1/-1;
 }
 
+.img-container {
+  width: 100%;
+  display: flex;
+}
+
+.portfolio-img {
+  width: 95%;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  border-bottom: 2px black dotted;
+}
+
+.button-container [class^="fab fa"] {
+  font-size: 20px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.button {
+  max-width: 260px;
+  width: 50%;
+  min-width: 117px;
+  height: 50px;
+  margin: 5px 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: #065fd4;
+  color: #fff;
+  cursor: pointer;
+}
+
+.description {
+  font-size: 1.1rem;
+  padding: 5px 0px;
+}
+
+.button:hover {
+  background: #174888;
+}
+
 /* Footer  */
 footer {
   padding: 60px 0;
@@ -208,6 +262,10 @@ footer {
 
 [class^="footer-item"] {
   grid-column: span 3;
+}
+
+[class^="footer-item"]:hover {
+  border-bottom: 2px solid white;
 }
 
 @media screen and (max-width: 800px) {
@@ -252,6 +310,9 @@ footer {
     grid-column: 1/-1;
     grid-row: 1/2;
     align-self: center;
+  }
+  .button-container {
+    justify-content: space-evenly;
   }
 }
 
