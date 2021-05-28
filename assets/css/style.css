@@ -190,10 +190,10 @@ h1 {
 }
 
 .portfolio-img {
-  width: 95%;
-  height: 200px;
+  width: 75%;
+  height: 285px;
   margin: 0 auto;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .button-container {
