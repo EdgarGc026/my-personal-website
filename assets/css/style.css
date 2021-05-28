@@ -221,6 +221,7 @@ h1 {
   font-size: 14px;
   border-radius: 10px;
   background-color: #065fd4;
+  text-decoration: none;
   color: #fff;
   cursor: pointer;
 }
