@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --eerie-black: #151515;
+  --just-white: #ffffff;
+  --gray: #808080;
+  --flickr-blue: #065fd4;
+  --yale-blue: #174888;
+}
+
 html,
 body {
   font-family: "Raleway", sans-serif;
@@ -64,8 +72,8 @@ h1 {
 
 .cta {
   width: 130px;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--eerie-black);
+  color: var(--just-white);
   display: inline-block;
   text-align: center;
   padding: 10px 0;
@@ -76,7 +84,11 @@ h1 {
 .services {
   /* height: 370px; */
   height: auto;
-  background: linear-gradient(180deg, #fff 50%, #000 50%);
+  background: linear-gradient(
+    180deg,
+    var(--just-white) 50%,
+    var(--eerie-black) 50%
+  );
 }
 
 .title-head {
@@ -100,7 +112,7 @@ h1 {
   width: 30%;
   height: 220px;
   padding: 20px 10px;
-  background: #fff;
+  background: var(--just-white);
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   text-align: center;
@@ -127,7 +139,7 @@ h1 {
   height: auto;
   padding-top: 30px;
   padding-bottom: 60px;
-  background: #000;
+  background: var(--eerie-black);
   color: #ff;
 }
 
@@ -136,7 +148,7 @@ h1 {
 }
 
 .about-us-texts {
-  color: #fff;
+  color: var(--just-white);
   grid-column: 1/-1;
   text-align: center;
 }
@@ -164,7 +176,7 @@ h1 {
   padding-top: 10px;
   text-align: center;
   font-size: 1rem;
-  color: #fff;
+  color: #var(var(--just-white));
 }
 
 /* Mission */
@@ -199,7 +211,7 @@ h1 {
 .button-container {
   width: 100%;
   display: flex;
-  border-bottom: 2px black dotted;
+  border-bottom: 2px var(--eerie-black) dotted;
 }
 
 .button-container [class^="fab fa"] {
@@ -220,7 +232,7 @@ h1 {
   align-items: center;
   font-size: 14px;
   border-radius: 10px;
-  background-color: #065fd4;
+  background-color: var(--flickr-blue);
   text-decoration: none;
   color: #fff;
   cursor: pointer;
@@ -232,14 +244,14 @@ h1 {
 }
 
 .button:hover {
-  background: #174888;
+  background: var(--yale-blue);
 }
 
 /* Footer  */
 footer {
   padding: 60px 0;
-  background: #000;
-  color: white;
+  background: var(--eerie-black);
+  color: var(--just-white);
   text-align: center;
 }
 
@@ -253,12 +265,12 @@ footer {
 }
 
 [class^="footer-item"] a {
-  color: white;
+  color: var(--just-white);
   font-size: 30px;
 }
 
 [class^="footer-item"] a:hover {
-  color: gray;
+  color: var(--gray);
 }
 
 [class^="footer-item"] {
